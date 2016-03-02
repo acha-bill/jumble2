@@ -1,0 +1,50 @@
+﻿<Page x:Class="Jumble_2.RulesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Jumble_2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="RulesPage" Width="600" Height="600">
+
+    <Grid Margin="0,0,0,-20" Height="600">
+        <Rectangle Height="65" Margin="15,20,65,0" Stroke="Black" VerticalAlignment="Top" RadiusY="34.5" RadiusX="34.5">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8BCACD" Offset="0.026"/>
+                    <GradientStop Color="#00000000" Offset="0.817"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="textBlock" Height="45" Margin="35,30,85,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFEDF78C" Text="Form words by clikcing letters on the grid" FontFamily="Comic Sans MS" FontSize="20"/>
+        <Rectangle Height="65" Margin="15,100,65,0" Stroke="Black" VerticalAlignment="Top" RadiusY="34.5" RadiusX="34.5">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8BCACD" Offset="0"/>
+                    <GradientStop Color="#00000000" Offset="0.817"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="textBlock_Copy" Height="45" Margin="35,110,85,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFEDF78C" Text="Three chances to shuffle the letters on the grid." FontFamily="Comic Sans MS" FontSize="20"/>
+        <Rectangle Margin="15,240,65,110" Stroke="Black" RadiusY="34.5" RadiusX="34.5">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8BCACD" Offset="0"/>
+                    <GradientStop Color="#00000000" Offset="0.817"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="textBlock_Copy1" Margin="35,251.2,85,120" TextWrapping="Wrap" Foreground="#FFEDF78C" FontFamily="Comic Sans MS" FontSize="20"><Run Text="Score is based on word length only."/><LineBreak/><Run Text="If length is less than 2, score is length * 2"/><LineBreak/><Run Text="If length is between 3 and 4, score is length * 3"/><LineBreak/><Run Text="If length is between 4 and 6, score is length * 4"/><LineBreak/><Run Text="If length is 7, score is length * 5"/><LineBreak/><Run Text="If length is 8, score is length * 6"/><LineBreak/><Run Text="If length is 9, score is length * 7,"/><LineBreak/><Run Text="otherwise, score is length *10."/></TextBlock>
+        <Rectangle Height="65" Margin="15,170,65,0" Stroke="Black" VerticalAlignment="Top" RadiusY="34.5" RadiusX="34.5">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8BCACD" Offset="0"/>
+                    <GradientStop Color="#00000000" Offset="0.817"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="textBlock_Copy2" Height="45" Margin="35,180,85,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFEDF78C" Text="Click on the most recent letter to delete it" FontFamily="Comic Sans MS" FontSize="20"/>
+
+    </Grid>
+</Page>

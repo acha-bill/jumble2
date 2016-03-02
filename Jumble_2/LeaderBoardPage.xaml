@@ -1,0 +1,53 @@
+﻿<Page x:Class="Jumble_2.LeaderBoardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Jumble_2"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="LeaderBoardPage" Width="600" Height="600">
+
+    <Grid>
+        <ListView x:Name="facebookListView" Margin="20,80,280,10" FontSize="20" FontFamily="Comic Sans MS">
+            <ListView.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8BCACD" Offset="0"/>
+                    <GradientStop Offset="0.865"/>
+                    <GradientStop Color="#83C3E3E5" Offset="0.257"/>
+                </LinearGradientBrush>
+            </ListView.Background>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Picture" DisplayMemberBinding="{Binding Picture}"/>
+                    <GridViewColumn Header="Highscore" DisplayMemberBinding="{Binding HighScore}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Rectangle HorizontalAlignment="Right" Height="115" Margin="0,25,20,0" RadiusY="57" RadiusX="57" Stroke="Black" VerticalAlignment="Top" Width="120">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="profile_default.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="label" Content="Higshcore" HorizontalAlignment="Right" Height="50" Margin="0,145,10,0" VerticalAlignment="Top" Width="140" FontFamily="Comic Sans MS" FontSize="26.667" Foreground="#FF11B609"/>
+        <Label x:Name="highScoreLabel" Content="" HorizontalAlignment="Right" Height="50" Margin="0,195,40,0" VerticalAlignment="Top" Width="70" FontFamily="Comic Sans MS" FontSize="26.667" Foreground="#FF11B609"/>
+        <Label x:Name="label_Copy1" Content="Facebook friends" Height="50" Margin="20,25,280,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="26.667" Foreground="#FF1488E8"/>
+        <ListView x:Name="lastGamesListView" Margin="0,0,10,10" FontSize="16" FontFamily="Comic Sans MS" HorizontalAlignment="Right" Width="140" Height="255" VerticalAlignment="Bottom">
+            <ListView.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8BCACD" Offset="0"/>
+                    <GradientStop Offset="0.865"/>
+                    <GradientStop Color="#83C3E3E5" Offset="0.257"/>
+                </LinearGradientBrush>
+            </ListView.Background>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Score" DisplayMemberBinding="{Binding Score}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="label1" Content="Last 5 games" HorizontalAlignment="Right" Margin="0,295,10,270" Width="140" FontFamily="Comic Sans MS" FontSize="20" Foreground="#FF13B6DA"/>
+
+    </Grid>
+</Page>

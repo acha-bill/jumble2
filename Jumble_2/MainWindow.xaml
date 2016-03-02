@@ -1,0 +1,68 @@
+﻿<Window x:Class="Jumble_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jumble_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="667" Width="724">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF010E64" Offset="1"/>
+                <GradientStop Color="#FF0D0D76" Offset="0.939"/>
+                <GradientStop Color="#FF6E4AA1" Offset="0.191"/>
+                <GradientStop Color="#FFDAD3DA"/>
+                <GradientStop Color="#FE5D3F99" Offset="0.439"/>
+                <GradientStop Color="#FE46308F" Offset="0.565"/>
+                <GradientStop Color="#FE2A1E82" Offset="0.743"/>
+                <GradientStop Color="#FE6D49A0" Offset="0.317"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Left" Margin="25,180,0,101" Width="165">
+            <Button x:Name="playButton" Content="Play" Height="85" Opacity="0.7" BorderThickness="0" BorderBrush="#00707070" FontFamily="Comic Sans MS" FontSize="26.667" FontStyle="Italic" Foreground="Black" Click="playButton_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF003E2A"/>
+                        <GradientStop Offset="1"/>
+                        <GradientStop Color="#E900EE97" Offset="0.074"/>
+                        <GradientStop Color="#C527F0A7" Offset="0.513"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="rulesButton" Content="Rules" Height="85" Opacity="0.7" BorderThickness="0" BorderBrush="#00707070" FontSize="26.667" FontFamily="Comic Sans MS" FontStyle="Italic" Click="rulesButton_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF003E2A"/>
+                        <GradientStop Offset="1"/>
+                        <GradientStop Color="#E900EE97" Offset="0.042"/>
+                        <GradientStop Color="#B23BF1AF" Offset="0.613"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="LeaderBoardButton" Content="LeaderBoard" Height="85" Opacity="0.7" BorderThickness="0" BorderBrush="#00707070" FontSize="26.667" FontFamily="Comic Sans MS" FontStyle="Italic" Click="LeaderBoardButton_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF003E2A"/>
+                        <GradientStop Offset="1"/>
+                        <GradientStop Color="#E900EE97" Offset="0.07"/>
+                        <GradientStop Color="#B13CF2AF" Offset="0.565"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="faceBookButton" Content="Facebook" Height="85" Opacity="0.7" BorderThickness="0" BorderBrush="#00707070" FontSize="26.667" FontFamily="Comic Sans MS" FontStyle="Italic">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF003E2A"/>
+                        <GradientStop Offset="1"/>
+                        <GradientStop Color="#E900EE97" Offset="0.061"/>
+                        <GradientStop Color="#925EF4BD" Offset="0.591"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Frame x:Name="frame" Content="" Margin="195,150,10,39" NavigationUIVisibility="Hidden"/>
+        <Label x:Name="label" Content="Jumble" Height="85" Margin="225,30,231,0" VerticalAlignment="Top" FontSize="53.333" FontFamily="Comic Sans MS" FontStyle="Italic" Foreground="#FF8CE0FF" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
+
+    </Grid>
+</Window>
